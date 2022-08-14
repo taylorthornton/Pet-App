@@ -3,11 +3,16 @@ import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import axios from 'axios';
 
+import QuestionForm from './QuestionForm';
+import Appointments from './Appointments';
+
 const PetApp = function WhateverStupidName() {
 
   return (
     <div>
-      Pet App
+      MyPet
+      <QuestionForm />
+      <Appointments />
     </div>
   );
 };
