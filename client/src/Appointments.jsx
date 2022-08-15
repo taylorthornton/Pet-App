@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table';
@@ -8,7 +9,11 @@ function Appointments() {
   const allApps = useRecoilValue(allAppointments);
 
   return (
-    <Table striped bordered hover size="sm">
+    <OuterDiv>
+      <Title>
+      Appointments
+      </Title>
+    <Table  size="sm">
     <thead>
       <tr>
         <th>Type</th>
@@ -28,7 +33,31 @@ function Appointments() {
       </tr>
     </tbody>
   </Table>
+  </OuterDiv>
   );
 }
 
 export default Appointments;
+
+const OuterDiv = styled.div`
+  /* padding-right: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh:
+  padding-left: 2vh; */
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+  justify-content: space-between;
+  /* align-self: center; */
+`
+const Title = styled.div`
+  /* padding-right: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh:
+  padding-left: 2vh; */
+  /* display: flex;
+  flex-direction: column; */
+  margin: 2vh;
+  justify-content: space-between;
+  align-self: center;
+`
