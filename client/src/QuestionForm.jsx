@@ -39,9 +39,9 @@ function QuestionForm() {
       </SpaceDiv>
       <InnerDiv>
         {question[0] !== undefined &&
-          <div>
-          {question} is {allResponses[question]} to your pet.
-          </div>
+          <ResponseDiv>
+          {question.charAt(0).toUpperCase() + question.slice(1)} is {allResponses[question]} to your pet.
+          </ResponseDiv>
         }
       </InnerDiv>
 
@@ -88,3 +88,8 @@ const SpaceDiv = styled.span`
   padding-left: 5vh; */
   /* margin: auto; */
 `
+const ResponseDiv = styled.div`
+  color: #b42f11;
+  font-size: 20px;
+  font-weight: bold;
+  `

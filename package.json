@@ -19,7 +19,8 @@
     "build": "webpack --mode=production",
     "client-dev": "webpack serve --open",
     "server-dev": "npx nodemon --watch server server/index.js",
-    "test": "jest"
+    "test": "jest",
+    "both": "npm run start & npm run server-dev"
   },
   "dependencies": {
     "@emotion/react": "^11.10.0",

@@ -31,8 +31,10 @@ export default PetApp;
 
 
 const MainDiv = styled.div`
+  font: Arial;
   border-radius: 3px;
   border: 2px solid black;
+  background-color: #98ba26;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -57,8 +59,6 @@ const QuestionDiv = styled.div`
   justify-content: space-between;
 `
 const AppointmentDiv = styled.div`
-  border-radius: 3px;
-  border: 2px solid black;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -68,10 +68,10 @@ const AppointmentDiv = styled.div`
   padding-bottom: 5vh:
   padding-left: 5vh; */
   justify-content: space-around;
+  font-size: 50px;
 `
 const MainHeader = styled.h1`
-  border-radius: 3px;
-  border: 2px solid blue;
+  font-size: 50px;
   margin: auto;
   display: flex;
   flex-direction: column;
